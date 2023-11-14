@@ -10,33 +10,25 @@ Once deployed we can track all the transactions happening on our account by just
 
 ## Getting Started
 
-### Installing
-
-
-
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+TO run this program paste this code on your remix platform and your gitpod platform. Once that is done we will have to run two commands on the gitpod terminal.
+These two commands are for the contract to be deployed on the Avalanche c-chain blockchain network, this can be traced using the snowtrace website.
 ```
-code blocks for commands
+npx hardhat run scripts/deploy.js --network fuji
 ```
-
-## Help
-
-Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+npx hardhat verify <your address> --network fuji
 ```
+Once this is deployed on the network it will show on he snowtrace website. You will simply have to copy paste your address and you will be able to see what all transactions are happening on the network.
+You may check this by running the mint, burn, transfer functions using remix and it will be refelcted on the snowtrace website.
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+-Mokshhith P
+-mokshithlucku06@gmail.com
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT license.
